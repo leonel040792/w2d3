@@ -2,7 +2,6 @@ class Board
 
     def self.print_grid(arr)
         arr.each {|row| puts row.join(" ")}
-
     end
 
 
@@ -16,7 +15,7 @@ class Board
         @grid[array[0]][array[1]]
     end
 
-    def []=(position, val)
+    def []=(position, val)            
         @grid[position[0]][position[1]]=val
     end
 
