@@ -1,7 +1,5 @@
-require "byebug"
-
 class Board
-
+    
     def initialize
         @grid=Array.new(3){Array.new(3,"_")}
     end
@@ -25,7 +23,9 @@ class Board
     end
 
     def print
+        puts "==============================="
         @grid.each {|row| puts row.join(" ")}
+        puts "==============================="
     end
 
     def win_row?(mark)
